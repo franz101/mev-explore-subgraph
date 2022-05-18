@@ -1,0 +1,46 @@
+type Arb @entity {
+  id: ID!
+  metadata: String!
+  txHash: String!
+  smartContract: String!
+  caller: String!
+  logsCount: Int!
+  blockNumber: Int!
+  blockTimestamp: Int!
+  gasUsed: Int!
+}
+type LastArb @entity {
+  id: ID!
+  metadata: String!
+  txHash: String!
+  smartContract: String!
+  caller: String!
+  blockNumber: Int!
+  blockTimestamp: Int!
+  logsCount: Int!
+  gasUsed: Int!
+}
+
+type Bot @entity {
+  id: ID!
+  metadata: String!
+  counter: Int!
+  lastBlockNumber: Int!
+  lastBlockTimestamp: Int!
+}
+
+type ArbSignature @entity {
+  id: ID!
+  metadata: String!
+  counter: Int!
+  lastBlockNumber: Int!
+  lastBlockTimestamp: Int!
+}
+
+type UsedSmartContract @entity {
+  id: ID!
+  metadata: String!
+  counter: Int!
+  lastBlockNumber: Int!
+  lastBlockTimestamp: Int!
+}

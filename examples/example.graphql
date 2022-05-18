@@ -1,0 +1,40 @@
+{
+  bots(orderBy: counter, orderDirection: desc) {
+    id
+
+    metadata
+    counter
+  }
+
+  lastArbs {
+    #id
+    #metadata
+    txHash
+    blockNumber
+    blockTimestamp
+    #smartContract
+    #caller
+    #gasUsed
+  }
+
+  arbs {
+    id
+    metadata
+    txHash
+    smartContract
+    caller
+    gasUsed
+  }
+
+  arbSignatures {
+    id
+    metadata
+    counter
+  }
+
+  usedSmartContracts {
+    id
+    metadata
+    counter
+  }
+}
